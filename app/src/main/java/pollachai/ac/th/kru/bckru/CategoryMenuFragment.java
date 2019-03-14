@@ -78,5 +78,12 @@ public class CategoryMenuFragment extends Fragment implements View.OnClickListen
 
     private void showListView(int i) {
 
-    }
+        getActivity()
+                .getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.LayoutMainFragment, ListViewFragment.listViewInstance(i))
+                .addToBackStack(null)
+                .commit();
+
+    } // showListView
 }
