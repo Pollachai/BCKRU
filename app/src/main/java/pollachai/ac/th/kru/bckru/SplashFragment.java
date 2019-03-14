@@ -36,7 +36,7 @@ public class SplashFragment extends Fragment {
                         .commit();
 
             }
-        }, 10000);
+        }, 3000);
     }   //Main Method
 
     @Override
